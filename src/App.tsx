@@ -1,7 +1,5 @@
 import { useState } from 'react'
 import { useRef } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
 
 // Importing images from assets
@@ -19,30 +17,35 @@ function App() {
   const [adminImageHover, setAdminImageHover] = useState(false);
 
   //scroll to home function
-  const homeRef = useRef(null);
+  const homeRef = useRef<HTMLElement | null>(null);
+  const portofolioRef = useRef<HTMLElement | null>(null);
+  const socialmediaRef = useRef<HTMLElement | null>(null);
+  const otherRef = useRef<HTMLElement | null>(null);
+
+  
   const scrolltoHome = () => {
-    homeRef.current.scrollIntoView({
+    homeRef.current?.scrollIntoView({
       behavior: 'smooth'
     });
   };
 
-  const portofolioRef = useRef(null);
+  
   const scrolltoPortofolio = () => {
-    portofolioRef.current.scrollIntoView({
+    portofolioRef.current?.scrollIntoView({
       behavior: 'smooth'
     });
   };
 
-  const socialmediaRef = useRef(null);
+  
   const scrolltoSocialmedia = () => {
-    socialmediaRef.current.scrollIntoView({
+    socialmediaRef.current?.scrollIntoView({
       behavior: 'smooth'
     });
   };
 
-  const otherRef = useRef(null);
+ 
   const scrolltoOther = () => {
-    otherRef.current.scrollIntoView({
+    otherRef.current?.scrollIntoView({
       behavior: 'smooth'
     });
   };
