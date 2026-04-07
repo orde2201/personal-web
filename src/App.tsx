@@ -13,6 +13,8 @@ import instagramIcon from './assets/instagram.png'
 import githubIcon from './assets/github.png'
 import certificate1 from './assets/sertifikat/itbox1.png'
 import certificate2 from './assets/sertifikat/itbox2.png'
+import certificate3 from './assets/sertifikat/itbox3.png'
+import certificate4 from './assets/sertifikat/udemy.jpg'
 // Route components
 import  FavoritAnime  from './favAnime.tsx'
 import { FavoritMusic }from './favMusic.tsx'
@@ -73,7 +75,7 @@ function App() {
                     <div className={`image-box ${adminImageHover ? 'hover-image-box' : ''}`}>
                       <p className={`description ${adminImageHover ? 'hover-description' : ''}`}>
                         Hello, my name is I Gede Krisna Yoga Saputra from Indonesia. 
-                        I'm a full stack web developer. I hope you like anything that I make.
+                        I'm a penetration testing enthusiast. I hope you like anything that I make.
                       </p>
                     </div>
 
@@ -95,11 +97,13 @@ function App() {
                     <div className='home-box'>
                       <img src={homeIcon} alt="home" className='icon' onClick={scrolltoHome} />
                     </div>
-                    <div className='porto'>Portfolio</div>
+                    <div className='porto'>Certificate</div>
                   </div>
                   <div className='portofolio-box'>
                     <img src={certificate1} alt="portofolio" className='portofolio-image' />
                     <img src={certificate2} alt="portofolio" className='portofolio-image' />
+                    <img src={certificate3} alt="portofolio" className='portofolio-image' />
+                    <img src={certificate4} alt="portofolio" className='portofolio-image' />
                   </div>
                 </div>
               </section>
