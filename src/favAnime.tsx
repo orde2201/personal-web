@@ -1,18 +1,28 @@
-//import { useState } from 'react'
-//import { useRef } from 'react'
+import { useState, useEffect } from 'react'
 import './App.css'
-
-// Importing images from assets
-
+import xmlString from './assets/animelist.xml?raw'
 
 export default function FavoritAnime() {
-  const animeList = [
-    { title: 'Naruto', genre: 'Action, Adventure', rating: 8.3 },
-    { title: 'One Piece', genre: 'Action, Adventure', rating: 8.7 },
-    { title: 'Attack on Titan', genre: 'Action, Drama', rating: 9.0 },
-    { title: 'My Hero Academia', genre: 'Action, Superhero', rating: 8.0 },
-    { title: 'Demon Slayer', genre: 'Action, Fantasy', rating: 8.5 },
-  ]
+  // Biarkan TypeScript menginfer tipe dari initial value
+  const [animeList, setAnimeList] = useState<{ title: string }[]>([]);
+
+  useEffect(() => {
+    const parser = new DOMParser();
+    const xmlDoc = parser.parseFromString(xmlString, "text/xml");
+    
+    const titleElements = xmlDoc.getElementsByTagName('series_title');
+    
+    // Explicitly type the array
+    const animeArray: { title: string }[] = [];
+    for (let i = 0; i < titleElements.length; i++) {
+      const title = titleElements[i].textContent;
+      if (title) {
+        animeArray.push({ title });
+      }
+    }
+    
+    setAnimeList(animeArray);
+  }, []);
 
   return (
     <div className="anime-list">
@@ -20,12 +30,10 @@ export default function FavoritAnime() {
       <ul>
         {animeList.map((anime, index) => (
           <li key={index}>
-            <h3>{anime.title}</h3>
-            <p>Genre: {anime.genre}</p>
-            <p>Rating: {anime.rating}</p>
+            <p>{anime.title}</p>
           </li>
         ))}
       </ul>
     </div>
-  )
+  );
 }
