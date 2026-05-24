@@ -108,6 +108,30 @@ function App() {
                 </div>
               </section>
 
+              {/* five Page */}
+              <section ref={socialmediaRef}>
+                <div className="page5">
+                  <div className='left-box'>
+                    <div className='home-box'>
+                      <img src={homeIcon} alt="home" className='icon' onClick={scrolltoHome} />
+                    </div>
+                    <div className='porto'>Project</div>
+                  </div>
+                  <div className='portofolio-box'>
+                    <li className='link-project'>  
+                      <a style={{color: "black"}} href="https://github.com/orde2201/voting-cypt.git" >voting-cypt</a>
+                    </li>
+                    <li className='link-project'>
+                      <a style={{color: "black"}} href="https://github.com/orde2201/sasayaku.git" >sasayaku (gfx site)</a>
+                    </li>
+                    <li className='link-project'>
+                      <a style={{color: "black"}} href="https://github.com/orde2201/Cancer-Hunter-project__game.git" >Cancer Hunter  (simple turnbase game)</a>
+
+                    </li>
+                  </div>
+                </div>
+              </section>
+
               {/* Third Page */}
               <section ref={socialmediaRef}>
                 <div className="page3">

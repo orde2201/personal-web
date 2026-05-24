@@ -280,7 +280,7 @@ section .wave span:nth-child(3) {
 .page2 > .left-box > .porto{
   margin-top: 3.7vw;
   margin-left: 0vw;
-  font-size: 10vw;
+  font-size: 9vw;
   font-weight: bold;
   color: #672828;
   writing-mode: vertical-rl;
@@ -296,6 +296,75 @@ section .wave span:nth-child(3) {
 }
 
 
+
+
+/* End Page5 */
+.page5{
+  width: 100vw;
+  height: 58vw;
+  
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  justify-content: flex-end;
+  opacity: 0;
+  transition: 0.3s;
+}
+.page5:hover{
+  opacity: 1;
+}
+.page5 > .portofolio-box{
+  width: 90vw;
+  height: 50vw;
+  margin-top: 3.3vw;
+  background-color: #672828;
+}
+
+.page5 > .left-box{
+  width: 13vw;
+  height: 50vw;
+  margin-top: 3.3vw;
+
+  display: flex;
+  flex-direction: column;
+ 
+}
+.page5 > .left-box > .home-box{
+  width: 8vw;
+  height: 8vw;
+  background-color: #672828;
+  justify-content: flex-end;
+}
+.page5 > .left-box > .home-box > .icon{
+  width: 5vw;
+  margin-left: 1.5vw;
+  margin-top: 1.5vw;
+  transition: 0.3s;
+}
+.page5 > .left-box > .porto{
+  margin-top: 14.7vw;
+  margin-left: -1vw;
+  font-size: 10vw;
+  font-weight: bold;
+  color: #672828;
+  writing-mode: vertical-rl;
+  text-orientation: mixed;
+  transform: rotate(180deg);
+  font-family: "Londrina Shadow", sans-serif;
+}
+
+.page5 > .portofolio-box > .link-project{
+  width: 50vw;
+  margin-top: 1vw;
+  margin-left: 5vw;
+  font-size: 2vw;
+  color: black;
+  font-style: italic;
+}
+.page5 > .portofolio-box > .link-project:hover{
+  transform: scale(1.05);
+  
+}
 
 
 
