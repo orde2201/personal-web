@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react'
-import './App.css'
+import './favanime.css'
 import xmlString from './assets/animelist.xml?raw'
 
 export default function FavoritAnime() {
@@ -26,7 +26,7 @@ export default function FavoritAnime() {
 
   return (
     <div className="anime-list">
-      <h2>My Favorite Anime</h2>
+      <h2 className='title'>My Favorite Anime</h2>
       <ul>
         {animeList.map((anime, index) => (
           <li key={index}>
