@@ -15,6 +15,7 @@ import certificate1 from './assets/sertifikat/itbox1.png'
 import certificate2 from './assets/sertifikat/itbox2.png'
 import certificate3 from './assets/sertifikat/itbox3.png'
 import certificate4 from './assets/sertifikat/udemy.jpg'
+import certificate5 from './assets/sertifikat/udemy2.jpg'
 // Route components
 import  FavoritAnime  from './favAnime.tsx'
 import { FavoritMusic }from './favMusic.tsx'
@@ -104,6 +105,7 @@ function App() {
                     <img src={certificate2} alt="portofolio" className='portofolio-image' />
                     <img src={certificate3} alt="portofolio" className='portofolio-image' />
                     <img src={certificate4} alt="portofolio" className='portofolio-image' />
+                    <img src={certificate5} alt="portofolio" className='portofolio-image' />
                   </div>
                 </div>
               </section>
