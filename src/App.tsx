@@ -130,6 +130,12 @@ function App() {
                       <a style={{color: "black"}} href="https://github.com/orde2201/Cancer-Hunter-project__game.git" >Cancer Hunter  (simple turnbase game)</a>
 
                     </li>
+                    <li className='link-project'>
+                      <a style={{color: "black"}} href="https://github.com/orde2201/portswiger-wreiteup.git" >portswiger-wreiteup (writeup)</a>
+                    </li>
+                    <li className='link-project'>
+                      <a style={{color: "black"}} href="https://github.com/orde2201/other-writeup.git" >other-writeup (writeup)</a>
+                    </li>
                   </div>
                 </div>
               </section>
