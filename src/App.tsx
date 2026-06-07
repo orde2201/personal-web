@@ -221,7 +221,7 @@ function App() {
         {/* Routes */}
       
         <Route path="/favAnime" element={<FavoritAnime />} />
-        <Route path="/favMusic" element={<FavoritMusic />} />
+       
        
       </Routes>
     </>
